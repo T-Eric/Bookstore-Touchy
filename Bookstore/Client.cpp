@@ -6,10 +6,14 @@
 #include "Trader.hpp"
 
 int main() {
-  FILE* file = freopen("in.in", "r", stdin);
-  Parser sys;
-  while (!std::feof(file)) {
-    sys.getString();
-    sys.funcAllocate();
+  freopen("in.in", "r", stdin);
+  Parser core;
+  int i = 0;
+  while (true) {
+    i++;
+    cout << i << '\n';
+    core.getString();
+    if (!core.funcAllocate())
+      cout << "Invalid\n";
   }
 }

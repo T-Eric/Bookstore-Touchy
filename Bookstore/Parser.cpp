@@ -32,8 +32,6 @@ void Parser::getString() {
 /**
  * 记得以下坑要填：
  * 1.每条操作之后要记录对应日志
- * 2.buy操作中，需要trade信息修改
- * 3.import操作中，需要trade信息修改
  * （考虑整合在bookMaster里面）
  */
 bool Parser::funcAllocate() {

@@ -45,6 +45,7 @@ class AccountStack {
   stack<Account> Accountstack;  // active user
   stack<BookInfo> Bookstack;    // selected book
   stack<Account> Tempstack;
+  BookInfo tempinfo;
 
   // 貌似实际上只要在登录、登出时改变这里的selected就可以了
 
