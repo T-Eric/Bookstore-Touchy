@@ -11,7 +11,7 @@ int main() {
   Parser core;
   char ch;
   string input;
-  int i = 0;
+  // int i = 0;
   while (true) {
     // i++;
     // cout << i << ' ';
@@ -19,5 +19,7 @@ int main() {
     core.getString(input);
     if (!core.funcAllocate())
       cout << "Invalid\n";
+    if (std::cin.eof() || std::cin.fail())
+      return 0;
   }
 }
